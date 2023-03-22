@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "target": "ES2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true,
+    "pretty": true,
+    "strict": true,
+    "noEmitOnError": true,
+    "newLine": "lf",
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "importHelpers": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ESNext"],
+    "types": ["node"],
+    "paths": {
+      "#/*": ["./*"],
+      "@/*": ["src/*"],
+      "#internal/*": ["src/api/internal/*"],
+      "#internal": ["src/api/internal/index"],
+      "#transport/*": ["src/transport/*"],
+      "#transport": ["src/transport/index"],
+      "#types": ["src/types/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
